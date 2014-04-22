@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.athaydes.Person" table="people">
+        <id access="field" name="identity" type="long" column="id">
+            <generator class="increment"/>
+        </id>
+        <property access="field" name="lastUpdated" type="timestamp" column="timestamp"/>
+        <property access="field" name="name" type="string" column="name"/>
+        <property access="field" name="favouriteColour" type="string" column="colour"/>
+    </class>
+</hibernate-mapping>
+
